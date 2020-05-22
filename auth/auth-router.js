@@ -20,7 +20,7 @@ router.post('/register', (req, res) => {
 
     Users.add(credentials)
     .then(user => {
-     res.status(201).json ({
+     res.status(201).json({
         data: user
       });
     })
